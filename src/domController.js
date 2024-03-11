@@ -13,6 +13,8 @@ class DOMController {
         const markertingText = 'Hoy todo es mucho mas barato ya ven!';
         const titleText = 'Arepas Hermosas';
 
+        this.#elements.content.innerHTML = '';
+
         this.#elements.titleDiv.classList.add('title-div');
         this.#elements.presentSect.classList.add('present-sect');
         this.#elements.markertingThing.classList.add('marketing-thing');
@@ -29,7 +31,7 @@ class DOMController {
         this.#elements.titleDiv.textContent = titleText;
 
         this.#elements.img.setAttribute('alt', 'arepas-image');
-        this.#elements.img.src = "./images/arepas.jpg";
+        this.#elements.img.src = './images/arepas.jpg';
     }
 
 }
