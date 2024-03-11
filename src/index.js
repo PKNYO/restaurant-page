@@ -1,6 +1,7 @@
 import "./style.css";
+import {DOMController} from "./domController"
 
-const arepaImage = document.querySelector("img");
+const domController = new DOMController();
 
-arepaImage.src = "./images/arepas.jpg";
+domController.populateMainPage();
 
