@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../dist/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('woff2'),
+      url('../dist/fonts/NotoSans-VariableFont_wdth\,wght.ttf') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    font-family: 'NotoSans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: aliceblue;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    > header {
+        background-color: rgba(255, 241, 45, 0.48);
+
+        > nav {
+            display: flex;
+            height: 50px;
+            justify-content: space-around;
+            align-items: center;
+
+            > button {
+                border: none;
+                height: 100%;
+                width: 200px;
+                font-size: 150%;
+                font-family: 'NotoSans', sans-serif;
+                background-color: transparent;
+            }
+        }
+    }
+
+    > #content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        > .title-div {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            background-color: rgba(255, 241, 45, 0.476);
+        }
+
+        > .present-sect {
+            display: flex;
+
+            > p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3rem;
+                margin: 0;
+                background-color: rgba(52, 45, 255, 0.488);
+                font-size: 1.5rem;
+            }
+
+            > img {
+                
+            }
+        }
+
+        > .marketing-thing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            flex: 1;
+            background-color: rgba(255, 45, 45, 0.515);
+            min-height: 80px;
+        }
+    }
+
+    > footer {
+        display: absolute;
+        text-align: center;
+        bottom: 0;
+        height: 4rem;
+        background-color: rgba(15, 15, 29, 0.867);
+        color: aliceblue;
+        
+        > div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
