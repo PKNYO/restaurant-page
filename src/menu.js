@@ -1,3 +1,7 @@
+import familyImage from './images/menu-familia.jpeg';
+import infantilImage from './images/menu-infantil.jpeg';
+import golosoImage from './images/menu-goloso.jpeg';
+
 function menu() {
     let elements = {
         'content' : document.querySelector('#content'),
@@ -78,9 +82,10 @@ function menu() {
     elements.familiaImg.setAttribute('alt', 'familia');
     elements.infantilImg.setAttribute('alt', 'infantil');
     elements.golosoImg.setAttribute('alt', 'goloso');
-    elements.familiaImg.src = './images/menu-familia.jpeg';
-    elements.infantilImg.src = './images/menu-infantil.jpeg';
-    elements.golosoImg.src = './images/menu-goloso.jpeg';
+
+    elements.familiaImg.src = familyImage;
+    elements.infantilImg.src = infantilImage;
+    elements.golosoImg.src = golosoImage;
 
 }
 

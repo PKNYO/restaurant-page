@@ -1,3 +1,4 @@
+import arepaImage from './images/arepas.jpg';
 
 function home() {
     let elements = {
@@ -30,7 +31,7 @@ function home() {
     elements.titleDiv.textContent = titleText;
 
     elements.img.setAttribute('alt', 'arepas-image');
-    elements.img.src = './images/arepas.jpg';
+    elements.img.src = arepaImage;
 }
 
 export {home};

@@ -5,7 +5,7 @@ module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    filename: '[name].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [new HtmlWebpackPlugin({
@@ -29,15 +29,4 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    static: './dist',
-  },
-  optimization: {
-    runtimeChunk: 'single',
-  },
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-  }
 };
